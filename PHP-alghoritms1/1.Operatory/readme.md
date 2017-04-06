@@ -1,6 +1,5 @@
 # PHP - Podstawy PHP - Operatory 
 
-## Ćwiczenia do zrobienia z wykładowcą
 
 ### Ćwiczenie 1
 Stwórz 3 zmienne (```$a```, ```$b```, ```$c```)z wartościami liczbowymi.
@@ -12,7 +11,7 @@ Jeśli można – skrypt ma wypisywać jaki to trójkąt:
 * Równoboczny
 * O różnych bokach
 
-## Ćwiczenia do pracy samodzielnej
+
 
 ### Ćwiczenie 2
 Stwórz 3 zmienne (```$a```, ```$b```, ```$c```)z wartościami liczbowymi.
