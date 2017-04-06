@@ -21,8 +21,7 @@ Trójka pitagorejska to 3 liczby które spełniają poniższe założenie:
 ```
 a^2 + b^2 = c^2
 ```
-Pamiętaj żeby sprawdzić wszystkie 3 możliwości ułożenia liczb! 
-Użyj operatorów logicznych!
+
 
 ### Ćwiczenie 3
 Napisz skrypt, który obliczy i wyświetli pole i obwód prostokąta o bokach zdefiniowanych w zmiennych ```$bokA``` i ```$bokB```.
