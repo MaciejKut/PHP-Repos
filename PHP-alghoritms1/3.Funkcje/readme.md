@@ -1,6 +1,5 @@
 # PHP - Podstawy PHP - Funkcje 
 
-## Ćwiczenia do zrobienia z wykładowcą
 
 ### Ćwiczenie 1
 Napisz funkcję ```rentCost($days)```, która będzie przyjmować liczbę dni jako argument, a następnie wyliczać koszt wynajmu pokoju według podanego wzoru:
@@ -22,8 +21,6 @@ Liczba doskonała to taka, która jest równa sumie swoich dzielników. Przykła
 * 1 = 1,
 * 6 = 1+2+3.
 
-
-## Ćwiczenia do pracy samodzielnej
 
 ### Ćwiczenie 3
 Napisz skrypt, który podaną przez użytkownika kwotę pieniędzy (liczba całkowita) rozmieni na jak najmniejszą ilość monet i banknotów o nominałach 1, 2, 5, 10 złotych.
