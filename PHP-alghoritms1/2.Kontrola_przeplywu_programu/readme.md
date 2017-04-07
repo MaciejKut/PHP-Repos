@@ -1,11 +1,7 @@
 # PHP - Podstawy PHP - Kontrola przepływu programu 
 
-## Ćwiczenia do zrobienia z wykładowcą
-
 ### Ćwiczenie 1
 Korzystając z instrukcji switch napisz skrypt, który wyświetli nazwę miesiąca na podstawie zmiennej zawierającej numer miesiąca.
-
-## Ćwiczenia do pracy samodzielnej
 
 ### Ćwiczenie 2
 Program dnia pewnego seminarium wygląda następująco: 
