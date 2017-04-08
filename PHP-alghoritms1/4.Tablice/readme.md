@@ -1,7 +1,5 @@
 # PHP - Podstawy PHP - Tablice 
 
-## Ćwiczenia do zrobienia z wykładowcą
-
 ### Ćwiczenie 1
 Napsiz funkcję ```printTable($array)``` która w pętli przejdzie po wszystkich elementach tablicy i wypisze je na ekranie.
 
@@ -10,7 +8,6 @@ Napisz dwie funkcje:
 * ```print2DTable($table)``` - która wyświetli tablicę dwuwymiarową w postaci macierzy,
 * ```getMatrixTrace($array)```, która obliczy ślad macierzy (sumę elementów na głównej przekątnej) przekazanej w parametrze. Zakładamy, że tablica reprezentuje macierz kwadratową (liczba wierszy równa liczbie kolumn)
 
-## Ćwiczenia do pracy samodzielnej
 
 ### Ćwiczenie 3
 Napisz funkcję, która wyświetli największą liczbę spośród liczb znajdujących się w tablicy liczb całkowitych.
