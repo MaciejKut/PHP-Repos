@@ -49,7 +49,4 @@ input -> "papier", "kamień"
 output -> "Gracz 1 wygrał"
 ```
 
-## Ćwiczenia do zrobienia w domu
-Zajrzyj do plików homework1.php aż do homework5.php. Znajdują się tam kawałki kodu i możliwe ich wyniki zapisane w komentarzach. 
-Zaznacz która odpowiedź jest poprawna i dopisz dlaczego tak uważasz.
-***Postaraj się wybrać którąś odpowiedź zanim uruchomisz plik!***
+

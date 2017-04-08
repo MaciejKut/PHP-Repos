@@ -24,7 +24,9 @@ d. goodthingsmanygoodthings
 e. nic nie wyświetli
 
 
-Poprawna odpowiedź:
-Dlaczego:
+Poprawna odpowiedź: d
+Dlaczego: na początku zmienna ma wartość null != 1 więc robi goodthings
+ * następnie zwraca na końcu zinkrementowaną x więc w drugim wywołaniu =1
+ * i drukuje wszystkie po kolei
 
  */

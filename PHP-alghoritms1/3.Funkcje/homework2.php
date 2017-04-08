@@ -20,7 +20,8 @@ d. 47
 e. 1519
 
 
-Poprawna odpowiedź:
+Poprawna odpowiedź: 47
 Dlaczego:
-
+funkcja zwraca tylko bolean true natomiast wyświetlenie
+ * jest poza funkcją zadeklarowanych wcześniej zmiennych
  */

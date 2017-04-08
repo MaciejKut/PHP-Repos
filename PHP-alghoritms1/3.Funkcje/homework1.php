@@ -18,10 +18,8 @@ a. 19
 b. 37
 c. 36
 d. 74
-e. nic nie wyświetli
+e. nic nie wyświetli  - ODP PRAWIDŁOWA BO FUNKCJE NIC NIE WYŚWIETLAJĄ I NIC
+ * NIE ZWRACAJĄ
 
-
-Poprawna odpowiedź:
-Dlaczego:
 
  */
