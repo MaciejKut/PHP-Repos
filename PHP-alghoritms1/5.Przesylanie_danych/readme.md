@@ -21,7 +21,6 @@ W tym zadaniu stwórz 3 strony:
 * Druga strona ma wyświetlać zawartość ciasteczka ```User```. Jeżeli nie ma takiego ciasteczka to powinna wyświetlić odpowiednie informacje.
 * Trzecia strona powinna kasować ciasteczko o nazwie ```User```.
 
-## Ćwiczenia do pracy samodzielnej
 ### Ćwiczenie 5
 W tym zadaniu dopisz funkcjonalnośc do 2 stron:
 * Pierwsza strona (multi.php) ma pobierać 2 zmienne z GET o nazwach ```width``` i ```height``` (jeżeli informacje nie są przesłane to ```width = 5``` i ```height =10```), a następnie wygeneruje tabliczkę mnożenia o podanej wysokości i szerokości (podobną jak w zadaniu z pętli które robiliście pierwszego dnia),
