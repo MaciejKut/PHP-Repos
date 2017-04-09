@@ -10,6 +10,7 @@
 
 // tutaj wygeneruj kilka linków
 // możesz to zrobić np. za pomocą pętli
+var_dump($_SERVER);
 
 ?>
 

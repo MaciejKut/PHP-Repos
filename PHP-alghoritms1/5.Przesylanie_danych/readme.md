@@ -1,6 +1,5 @@
 # PHP - Podstawy PHP - Przesyłanie danych 
 
-## Ćwiczenia do zrobienia z wykładowcą
 
 ### Ćwiczenie 1
 Napisz stronę, która wczyta ze zmiennej superglobalnej dwie zmienne ```$start``` i ```$end``` (dla uproszczenia załóźmy że będziemy przesyłać tylko liczby całkowite). Następnie wypisze wszaystkie liczby od ```$start``` do ```$end```. Jeżeli zmienne nie są przesłane to wypisz odpowiednią informację na ten temat.
