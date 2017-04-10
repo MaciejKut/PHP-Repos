@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Ćwiczenie 4</title>
+        <title>Ćwiczenie 6 czyszczenie tekstu wulgarnego</title>
     </head>
     <body>
 
@@ -18,6 +18,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (!isset($_POST['userAgreement'])) {
             echo $userText;
         } else {
+
+            $notAllowed = ['kurwa', 'chuj', 'pizda', 'pierdole'];
+
             $arrayText = explode(' ', $userText);
 
             $modificatedText = [];
@@ -33,8 +36,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $modificatedText[] = $value;
                 }
             }
+            echo implode(' ', $modificatedText);
         }
-        var_dump($modificatedText);
         ?>
 
 
