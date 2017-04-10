@@ -35,22 +35,21 @@ function changeMoney($str, $amount) {
     </head>
     <body>
 
-<?php
-var_dump(actCurrRate('EUR'));
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        <?php
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-    if (isset($_POST['conversionType']) && isset($_POST['cashAmount']) &&
-            is_numeric($_POST['cashAmount'])) {
-        $str = $_POST['conversionType'];
-        $val = $_POST['cashAmount'];
+            if (isset($_POST['conversionType']) && isset($_POST['cashAmount']) &&
+                    is_numeric($_POST['cashAmount'])) {
+                $str = $_POST['conversionType'];
+                $val = $_POST['cashAmount'];
 
-        changeMoney($str, $val);
-    } else {
-        echo 'Podano nieprawidłowe dane należy wpisać kwotę, użyto'
-        . 'nie dozwolonych znaków';
-    }
-}
-?>
+                changeMoney($str, $val);
+            } else {
+                echo 'Podano nieprawidłowe dane należy wpisać kwotę, użyto'
+                . 'nie dozwolonych znaków';
+            }
+        }
+        ?>
 
         <form action="#" method="POST">
             <label>
@@ -62,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <input type="radio" name="conversionType" value="EURtoUSD" checked> EUR → USD <br>
                 <input type="radio" name="conversionType" value="USDtoEUR" > USD → EUR <br>
                 <input type="radio" name="conversionType" value="EURtoPLN" > EUR → PLN <br>
-                <input type="radio" name="conversionType" value="PLNtoEUR" > PLN → USD <br>
+                <input type="radio" name="conversionType" value="PLNtoEUR" > PLN → EUR <br>
                 <input type="radio" name="conversionType" value="USDtoPLN" > USD → PLN <br>
                 <input type="radio" name="conversionType" value="PLNtoUSD" > PLN → USD <br>
             </label>
