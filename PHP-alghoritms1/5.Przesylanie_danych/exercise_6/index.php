@@ -25,16 +25,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             $modificatedText = [];
             foreach ($arrayText as $value) {
-                if ($value === 'kurwa') {
-                    $tmp = strlen($value);
-                    $word = '';
-                    for ($i = 1; $i <= $tmp; $i++) {
-                        $word .= '*';
+                foreach ($notAllowed as $value2) {
+
+                    if ($value === $value2) {
+                        $tmp = strlen($value);
+                        $word = '';
+                        for ($i = 1; $i <= $tmp; $i++) {
+                            $word .= '*';
+                        }
+                        $modificatedText[] = $word;
+                        $value = null;
                     }
-                    $modificatedText[] = $word;
-                } else {
-                    $modificatedText[] = $value;
                 }
+                $modificatedText[] = $value;
             }
             echo implode(' ', $modificatedText);
         }
@@ -55,3 +58,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     </body>
 </html>
+
