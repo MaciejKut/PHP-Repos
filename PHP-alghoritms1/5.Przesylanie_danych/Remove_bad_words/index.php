@@ -18,28 +18,31 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (isset($_POST['userAgreement'])) {
             echo $userText;
         } else {
+            if (isset($userText)) {
+                $notAllowed = ['kurwa', 'chuj', 'pizda', 'pierdole'];
 
-            $notAllowed = ['kurwa', 'chuj', 'pizda', 'pierdole'];
+                $arrayText = explode(' ', $userText);
 
-            $arrayText = explode(' ', $userText);
+                $modificatedText = [];
+                foreach ($arrayText as $value) {
+                    foreach ($notAllowed as $value2) {
 
-            $modificatedText = [];
-            foreach ($arrayText as $value) {
-                foreach ($notAllowed as $value2) {
-
-                    if ($value === $value2) {
-                        $tmp = strlen($value);
-                        $word = '';
-                        for ($i = 1; $i <= $tmp; $i++) {
-                            $word .= '*';
+                        if ($value === $value2) {
+                            $tmp = strlen($value);
+                            $word = '';
+                            for ($i = 1; $i <= $tmp; $i++) {
+                                $word .= '*';
+                            }
+                            $modificatedText[] = $word;
+                            $value = null;
                         }
-                        $modificatedText[] = $word;
-                        $value = null;
                     }
+                    $modificatedText[] = $value;
                 }
-                $modificatedText[] = $value;
+                echo implode(' ', $modificatedText);
+            } else {
+                echo 'Wpisz tekst z wulgaryzmami';
             }
-            echo implode(' ', $modificatedText);
         }
         ?>
 
