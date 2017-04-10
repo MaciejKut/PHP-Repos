@@ -1,6 +1,10 @@
 <?php
 
+
 // tutaj umieść kod który będzie przeliczał waluty
+$xml = file_get_contents("http://api.nbp.pl/api/exchangerates/rates/A/EUR/?format=json");
+$xml2 = json_decode($xml, true);
+echo $xml2['rates']['0']['mid'];
 
 ?>
 
@@ -9,12 +13,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Ćwiczenie 5</title>
-</head>
+    </head>
 <body>
 
 <?php
 
-// Tutaj umieść kod który będzie wyświetlał przeliczoną walutę
+
 
 ?>
 
