@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <body>
 
         <?php
-        if (!isset($_POST['userAgreement'])) {
+        if (isset($_POST['userAgreement'])) {
             echo $userText;
         } else {
 
