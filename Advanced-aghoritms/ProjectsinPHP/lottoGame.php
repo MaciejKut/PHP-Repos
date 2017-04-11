@@ -1,6 +1,6 @@
 <?php
 $start = 1;
-$stop = 7;
+$stop = 49;
 ?>
 <html>
     <head>
@@ -12,6 +12,7 @@ $stop = 7;
             body {
                 /* Background pattern from Subtle Patterns */
                 background-image: url('img/symphony.png');
+                text-align: center;
             }
         </style>
     </head>
@@ -43,8 +44,11 @@ $stop = 7;
 
             if (isset($picked)) {
                 $matching = array_intersect($picked, $wylosowane);
-                if (count($matching) > 0) {
+                if (count($matching) >= 0) {
                     switch (count($matching)) {
+                        case 0:
+                            echo '<br/>Słabo nic nie wygrałeś<br/>';
+                            break;
                         case 1:
                         case 2:
 
