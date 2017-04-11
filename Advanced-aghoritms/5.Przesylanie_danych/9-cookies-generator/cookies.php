@@ -13,7 +13,7 @@ echo '</ul>';
 
 echo '<ul>';
 foreach ($array as $key => $value) {
-    echo '<li><a target="_blank" href="deleteCookie.php?cookie=' . $key .'">Skasuj '
-            . 'zawartość ciastka o nazwie '.$key. '</a></li>';
+    echo '<li><a target="_blank" href="deleteCookie.php?cookie=' . $key . '">Skasuj '
+    . 'zawartość ciastka o nazwie ' . $key . '</a></li>';
 }
 echo '</ul>';
