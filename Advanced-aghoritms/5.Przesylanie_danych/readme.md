@@ -60,9 +60,5 @@ W tym zadaniu stwórz 2 strony:
 
 ### Ćwiczenie 10
 W tym zadaniu stwórz 2 strony:
-* Na stronie wyświetl wszystkie ciasteczka do których masz dostęp. Jak wczytać wszystkie ciasteczka przeczytaj [tutaj][all-cookies]. Przy każdym z nich wygeneruj link do drugiej strony przekazując GET-em nazwę ciasteczka.
+* Na stronie wyświetl wszystkie ciasteczka do których masz dostęp. Jak wczytać wszystkie ciasteczka przeczytaj. Przy każdym z nich wygeneruj link do drugiej strony przekazując GET-em nazwę ciasteczka.
 * Na drugiej stronie poinformuj o tym że usuwasz ciasteczko i je usuń. Nazwę ciasteczka pobierz z GET.
-
-
-<!-- Links -->
-[all-cookies]:http://stackoverflow.com/questions/9577029/can-i-display-all-the-cookies-i-set-in-php
