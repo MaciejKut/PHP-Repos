@@ -7,6 +7,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo 'Nie prawidłowe dane zaznaczy dokładnie 6 liczb';
         var_dump($_POST);
     }
+    // losowanie liczb
+    echo '<br /> Wylosowane liczby to: ';
+    echo print_r($wylosowane);
 }
 
 $start = 1;
@@ -20,3 +23,7 @@ for ($i = $start; $i <= $stop; $i++) {
 }
 echo '<input type="submit" style="display: block; margin-top: 20px"/></fieldset>';
 echo '<form></div>';
+
+
+
+echo '<div></div>';
