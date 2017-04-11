@@ -1,6 +1,15 @@
 <?php
-$start = 1;
-$stop = 49;
+ 
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    if (isset($_GET['start']) && is_numeric($_GET['start']) && isset($_GET['stop']) && is_numeric($_GET['stop'])) {
+        //var_dump($_GET);
+        $start = $_GET['start'];
+        $stop = $_GET['stop'];
+    }
+} else {
+    $start = 1;
+    $stop = 49;
+}
 ?>
 <html>
     <head>
