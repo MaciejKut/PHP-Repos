@@ -20,9 +20,20 @@ class Shape {
 
         if (is_string($color)) {
             $this->color = "$color";
+        } else {
+            $this->color = 'not given';
         }
 
         echo "Created shape (x:$this->x,y:$this->y) in color: $this->color </br>";
+    }
+
+    public function printInfo() {
+        echo "position of center of the shape is x: $this->x, y: $this->y, and color: $this->color";
+    }
+
+    public function distOfAnothShape(Shape $x) {
+        $distance = sqrt(pow(($this->x - $x->x), 2) + pow(($this->y - $x->y), 2));
+        return $distance;
     }
 
     public function __destruct() {
