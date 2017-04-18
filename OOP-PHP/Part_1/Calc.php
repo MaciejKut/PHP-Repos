@@ -15,9 +15,15 @@ class Calc {
         return $result;
     }
 
+    public function multiply($num1, $num2) {
+        $result = $num1 * $num2;
+        $this->array1[] = "Multiplied $num1 with $num2 got $result";
+        return $result;
+    }
+
     public function printHistory() {
         foreach ($this->array1 as $value) {
-            echo $value.'<br/>';
+            echo $value . '<br/>';
         }
     }
 
