@@ -2,8 +2,8 @@
 
 class Wektor {
 
-    private $x;
-    private $y;
+    protected $x;
+    protected $y;
 
     public function __construct($x, $y) {
         if (is_numeric($x)) {
