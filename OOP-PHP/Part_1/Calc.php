@@ -2,7 +2,7 @@
 
 class Calc {
 
-    public $array1;
+    protected $array1;
 
     public function __construct() {
 
