@@ -28,7 +28,7 @@ class Shape {
     }
 
     public function printInfo() {
-        echo "position of center of the shape is x: $this->x, y: $this->y, and color: $this->color";
+        echo "Shape at x: $this->x, y: $this->y, and color: $this->color";
     }
 
     public function distOfAnothShape(Shape $x) {
