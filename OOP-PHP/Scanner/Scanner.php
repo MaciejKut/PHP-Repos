@@ -21,4 +21,24 @@ class Scanner {
         }
     }
 
+    public function changeQty($name, $quantity) {
+        if (isset($this->cart[$name])) {
+            $this->cart[$name]->setQuantity($quantity);
+        }
+    }
+
+    public function printRecipt() {
+        $totalValue = 0;
+        foreach ($this->cart as $value) {
+
+            echo "Nazwa produktu: " . $value->getName() . "  ,";
+            echo " Opis: " . $value->getDescription() . " ,";
+            echo " Cena: " . $value->getPrice() . " ,";
+            echo " Ilość:" . $value->getQuantity() . " </br>";
+
+            $totalValue += $value->totalValue();
+        }
+        echo "</br>Wartość po rabacie: $totalValue </br>";
+    }
+
 }

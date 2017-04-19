@@ -6,12 +6,12 @@ class Product {
     private $quantity;
     private $price;
     private $description;
-    
+
     public function __construct($name, $quantity, $price, $description) {
-        $this->price = $price ;
-        $this->quantity = $quantity ;
-        $this->name = $name ;
-        $this->description = $description ;
+        $this->price = $price;
+        $this->quantity = $quantity;
+        $this->name = $name;
+        $this->description = $description;
     }
 
     public function getName() {
@@ -23,6 +23,7 @@ class Product {
     }
 
     public function getPrice() {
+
         return $this->price;
     }
 
@@ -47,7 +48,11 @@ class Product {
     }
 
     public function totalValue() {
-        return $this->price * $this->quantity;
+        if ($this->quantity < 3) {
+            return $this->price * $this->quantity;
+        } else {
+            return $this->price * $this->quantity * 0.8;
+        }
     }
 
 }
