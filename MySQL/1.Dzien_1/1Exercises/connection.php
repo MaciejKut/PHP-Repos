@@ -10,15 +10,16 @@ function openConn() {
     if ($conn->connect_error) {
         die("Error: " . $conn->connect_error);
     }
+    return $conn;
 }
 
-function createTable($x) {
+function mysqliFunct($x) {
 
     $conn = new mysqli('localhost', 'root', 'maciej', 'Maciej2');
     $result = $conn->query($x);
 
     if ($result === TRUE) {
-        echo("Table was created properly");
+        echo("SQL was executed<br>");
     } else {
         echo("Error: " . $conn->error);
     }
@@ -30,3 +31,4 @@ function closeConn($conn) {
     $conn->close();
     $conn = null;
 }
+
