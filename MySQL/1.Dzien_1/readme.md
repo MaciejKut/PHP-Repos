@@ -1,7 +1,7 @@
 # PHP - MySQL - Ćwiczenia 
 
 ### Ćwiczenie 1 - Tworzenie bazy danych.
-Stwórz nową bazę danych o nazwie ```exercises_db```. 
+Stwórz nową bazę danych o nazwie ```Maciej2```. 
 Następnie napisz skrypt php który stworzy połączenie do tej bazy danych.
 
 ### Ćwiczenie 2 - Tworzenie tabel z danymi.
