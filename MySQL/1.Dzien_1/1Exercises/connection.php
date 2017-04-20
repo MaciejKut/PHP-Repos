@@ -1,5 +1,8 @@
 <?php
 
+//This is just connection to practice
+//remeber to add it to gitignore !
+
 function openConn() {
     $conn = new mysqli('localhost', 'root', 'maciej', 'Maciej2');
 
